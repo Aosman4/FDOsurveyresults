@@ -24,7 +24,7 @@ ui =
         tabItem("Results",
                 box(
                   selectInput("TITLE_E", "Select Question:", choices = unique(data$TITLE_E)),width = 6),
-                box(plotOutput("bar_plot", height = "400px", width = "100%"), width = 9)
+                box(plotOutput("bar_plot", height = "400px", width = "400px"), width =6)
                 
         ))))
 
