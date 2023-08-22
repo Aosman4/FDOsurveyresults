@@ -7,7 +7,7 @@ rsconnect::setAccountInfo(name='aosman4',
                           token='0C55A46CD316C63C6E89E436DFACBBBD',
                           secret='AZhZnE6NC2TUCxesP8h+LYYxRT3ljWOcdSmTIObm')
 
-data <-read.csv("https://raw.githubusercontent.com/Aosman4/FDOsurveyresults/main/FDOresultsdata.csv/")
+data <-read.csv("https://raw.githubusercontent.com/Aosman4/FDOsurveyresults/main/FDOresultsdata.csv")
 ui = 
   dashboardPage(
     dashboardHeader(title = "FDO PSES Results"),
@@ -30,7 +30,6 @@ ui =
 
 server <- function(input, output) {
   
-  data <-read.csv("FDOresultsdata") 
   
   output$bar_plot <- renderPlot({
     selected_question <- input$TITLE_E
